@@ -1,26 +1,43 @@
 body
 {
-
-	
+	color: black;
 }
-
 h1
 {
 	font-size: 3em;
 
 }
 
+		*[class*="columna"]{
+			float: left;
+		}
+
+		*[class*="columna"] > img{
+			max-width: 100%;
+		}
+
+
+
 .container
 {
   width: 960px;
-  background-color: white;
   /*background : #C0D9D9 url(images/fondo.gif) repeat; */
-   font : 8pt Arial; 
-   color : #888888; 
-   margin : 20px 0px 20px 0px; 
-   text-align: left; 
+   font : 12pt Arial; 
+   color : black; 
+   margin :0 auto;
+    
 
 }
+
+.textAl
+{
+	text-align: right;
+	display: block;
+}
+   .remarcado
+   {
+   	border-style: dotted;
+   }
    .columna90
    {
    	width: 90%;
@@ -29,4 +46,30 @@ h1
    .columna10
    {
    	width: 10%;
+   }
+   .fila
+   {
+   	display: block;
+   	width: 100%;
+   }
+
+   .fila::after
+   {
+   	clear: both;
+   }
+
+   .columna66
+   {
+   	 width: 66%;
+   }
+
+   .columna33
+   {
+    width: 33%;
+
+   }
+
+   .columna100
+   {
+   	width: 100%;
    }
